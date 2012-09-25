@@ -1,0 +1,11 @@
+;;; Automatically generated on Fri Sep 21 20:29:54 2012
+;;; Invoked by chris@macbook-pro.local using 24.2.1
+(setq-default session-file-alist '(("~/Sites/_test/python/todo/index.py" 82 82 1 nil nil 46 (overwrite-mode)) ("~/Sites/_test/c++/test.cpp" 99 nil 1 nil nil 99 (overwrite-mode)) ("~/.emacs.d/custom.el" 1 nil 1 nil nil 997 (overwrite-mode)) ("~/.emacs.d/init.el" 1010 nil 1 nil nil 1010 (overwrite-mode)) ("~/.emacs.d/init-osx-keys.el" 651 nil 1 nil nil 651 (overwrite-mode)) ("~/.emacs.d/init-themes.el" 2888 nil 1 nil nil 2888 (overwrite-mode)) ("~/Sites/_blueprint_cms/app/Cms/Model/Auth.php" 803 nil 1 nil nil 335 (overwrite-mode))))
+(setq-default file-name-history '("/Users/chris/Sites/_test/python/todo/index.py" "/Users/chris/Sites/_test/c++/test.cpp" "~/.emacs.d/custom.el" "/Users/chris/.emacs.d/init.el" "/Users/chris/.emacs.d/init-osx-keys.el" "~/.emacs.d/init-themes.el" "/Users/chris/.emacs.d/README" "/Users/chris/Sites/_blueprint_cms/app/Cms/Model/Auth.php"))
+(setq-default buffer-name-history '("test.cpp" "README" "Auth.php"))
+(setq-default command-history '((find-file "/Users/chris/Sites/_test/python/todo/index.py") (kill-buffer "test.cpp") (linum-mode (quote toggle)) (find-file "/Users/chris/Sites/_test/c++/test.cpp") (dark) (find-file "/Users/chris/.emacs.d/init.el") (find-file "/Users/chris/.emacs.d/init-osx-keys.el") (enable-theme (quote sanityinc-solarized-light)) (dired "/Users/chris/.emacs.d/") (kill-buffer "README") (find-file "/Users/chris/.emacs.d/README") (kill-buffer "Auth.php") (find-file "/Users/chris/Sites/_blueprint_cms/app/Cms/Model/Auth.php")))
+(setq-default ido-buffer-history '("test.cpp" "README" "Auth.php"))
+(setq-default ido-file-history '("index.py" "test.cpp" "init.el" "init-osx-keys.el" "." "README" "Auth.php"))
+(setq-default minibuffer-history '("linum-mode" "dark" "sanityinc-solarized-light" "enable-theme"))
+(setq-default occur-collect-regexp-history '("\\1"))
+(setq-default smex-history '(dark enable-theme cd mf 5x5 arp dbx))
