@@ -1,10 +1,6 @@
 ;;Load all extensions in .emacs.d
 (add-to-list 'load-path "~/.emacs.d")  
 
-(require 'package)
-(add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
 ;; Some single liners
 (show-paren-mode 1)
 (electric-pair-mode 1)
@@ -24,23 +20,19 @@
 
 ;; Setup Solarized color theme
 (add-to-list 'load-path "~/.emacs.d/themes/solarized")
-(if
-    (equal 0 (string-match "^24" emacs-version))
-    ;; it's emacs24, so use built-in theme
-    (require 'solarized-dark-theme)
-  ;; it's NOT emacs24, so use color-theme
-  (progn
-    (require 'color-theme)
-    (color-theme-initialize)
-    (require 'color-theme-solarized)
-    (color-theme-solarized-dark)))
+(require 'solarized-dark-theme)
+
+;; Auto-complete setup
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)
+(ac-fuzzy-complete)
 
 ;; Setup JavaScript support
-;;(autoload 'js2-mode "js2" nil t)                                     
-;;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode)) 
+(autoload 'js2-mode "js2" nil t)                                     
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode)) 
 
 ;; Setup PHP support
-(add-to-list 'load-path "~/.emacs.d")
 (require 'php-mode)
 (require 'flymake)
 
@@ -72,7 +64,8 @@
 ;; Python support
 (add-to-list 'load-path "~/.emacs.d/python-mode")
 (require 'python-mode)
-  (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'interpreter-mode-alist '("python" . python-mode))
 
 ;; IDO support
 (setq ido-enable-flex-matching t)
